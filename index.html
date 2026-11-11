@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeetu Thomas Vincent | Cybersecurity Analyst</title>
+  <meta name="description" content="Jeetu Thomas Vincent — SOC Analyst with CompTIA Security+ and OCSA certifications. SIEM monitoring, alert triage, log analysis and detection rule engineering with Splunk, Elastic and Wazuh.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Intro screen -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <p class="intro-line">The analyst and the threat hunter<br>your network needs</p>
+  </div>
+
+  <!-- 3D scene (embers + hero object) -->
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav glass">
+      <a href="#home" class="logo"><span class="logo-dot"></span><span>JEETU<span class="accent">.SEC</span></span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#record">Record</a></li>
+        <li><a href="#arsenal">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-solid nav-cta">Let's Talk</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="shard shard-a" aria-hidden="true"></div>
+      <div class="shard shard-b" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">SOC Analyst // Security+ // OCSA</p>
+        <h1 class="hero-title">
+          <span class="line">JEETU</span>
+          <span class="line small">Thomas Vincent</span>
+        </h1>
+        <p class="hero-tags"><span>SIEM Monitoring</span><span>Alert Triage</span><span>Detection Rules</span></p>
+        <p class="hero-sub">Hunting the noise that hides real threats. Security+ and OCSA certified, with hands-on Tier 1 experience across Splunk, Elastic and Wazuh.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-solid">Explore my work</a>
+          <a href="Jeetu_Thomas_Vincent_Resume.pdf" class="btn btn-ghost" download>Download résumé</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-photo" id="heroPhoto">
+        <img src="profile.jpg" alt="Jeetu Thomas Vincent" width="721" height="1024">
+      </div>
+      <a href="#projects" class="scroll-hint" aria-label="Scroll to projects"><span></span></a>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <p class="eyebrow">Tactical Operations</p>
+        <h2>PROJECTS<span class="accent">.</span></h2>
+        <p class="chip">Labs built to detect, triage and respond</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="card glass tilt reveal">
+          <div class="card-visual" aria-hidden="true">
+            <div class="viz viz-term">
+              <p class="dim">From: KYC-Update &lt;alerts@bank-kyc-verify.co&gt;</p>
+              <p class="dim">"Your account will be blocked today. Share OTP..."</p>
+              <p><b>▸</b> urgency language · lookalike domain · OTP request</p>
+              <p class="hot">VERDICT: PHISHING — do not reply, report it</p>
+            </div>
+            <span class="viz-tag">ANALYSIS // Email · SMS · URL</span>
+          </div>
+          <div class="card-body">
+            <p class="card-num">01</p>
+            <h3>CyberSafe – AI-Powered Phishing Detection &amp; Awareness Platform</h3>
+            <ul>
+              <li>Analyzes suspicious emails, SMS and URLs and returns a phishing, suspicious or safe verdict, explaining each social-engineering tactic with evidence and a next step.</li>
+              <li>Combines a deterministic rule engine with AI analysis tuned for Indian scams such as UPI, KYC, Aadhaar and IRCTC.</li>
+              <li>Phishing simulation campaigns that track clicks, reports and ignores, plus a training quiz and an awareness dashboard with CSV export.</li>
+            </ul>
+            <p class="tags"><span>Claude API</span><span>Rule Engine</span><span>Phishing Simulation</span></p>
+            <a class="card-link" href="https://cyberseckeralam.netlify.app/" target="_blank" rel="noopener">View live ↗</a>
+          </div>
+        </article>
+
+        <article class="card glass tilt reveal">
+          <div class="card-visual" aria-hidden="true">
+            <div class="viz viz-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <span class="viz-tag">ALERT // T1059 PowerShell</span>
+          </div>
+          <div class="card-body">
+            <p class="card-num">02</p>
+            <h3>AI-Assisted SIEM &amp; SOC Automation</h3>
+            <ul>
+              <li>Deployed Elastic SIEM with Sysmon to monitor Windows security events.</li>
+              <li>Wrote detection rules and built Kibana dashboards for continuous monitoring.</li>
+              <li>Automated alert enrichment and triage with Tines and Groq AI, sending analyst email notifications to cut response time.</li>
+            </ul>
+            <p class="tags"><span>Elastic SIEM</span><span>Tines</span><span>Sysmon</span><span>Groq</span></p>
+          </div>
+        </article>
+
+        <article class="card glass tilt reveal">
+          <div class="card-visual" aria-hidden="true">
+            <div class="viz viz-term">
+              <p><b>$</b> nmap -sS -p- 10.0.2.15</p>
+              <p class="dim">Discovered open port 80/tcp</p>
+              <p class="dim">Discovered open port 22/tcp</p>
+              <p class="hot">[SPLUNK] Port scan detected — src 10.0.2.4</p>
+            </div>
+            <span class="viz-tag">DETECTION // Port Scan</span>
+          </div>
+          <div class="card-body">
+            <p class="card-num">03</p>
+            <h3>Home SOC Lab – Threat Detection &amp; Alert Engineering</h3>
+            <ul>
+              <li>Deployed Splunk in a two-VM attacker/target lab and configured log ingestion for continuous monitoring.</li>
+              <li>Simulated port scans, web vulnerability scans and directory brute-forcing, and built a custom detection alert for each.</li>
+            </ul>
+            <p class="tags"><span>Splunk</span><span>Kali Linux</span><span>Nmap</span><span>Nikto</span><span>Gobuster</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="about-grid">
+        <div class="reveal">
+          <p class="eyebrow">Who am I</p>
+          <h2>ABOUT<br>JEETU<span class="accent">.</span></h2>
+          <div class="about-card glass-red">
+            <p>I'm a SOC Analyst with CompTIA Security+ and OCSA certifications and hands-on Tier 1 experience from a cybersecurity internship at F9 Infotech. I work in SIEM monitoring (Splunk, Elastic, Wazuh), alert triage, log analysis and detection rule engineering. I built an AI-powered phishing detection and security-awareness platform, and home SOC labs that simulate attacks and detect them end to end.</p>
+            <div class="about-points">
+              <div>
+                <h4>Defense-in-Depth</h4>
+                <p>Building and monitoring resilient architectures using industry-leading SIEM solutions.</p>
+              </div>
+              <div>
+                <h4>Threat Hunting</h4>
+                <p>Proactive identification and mitigation of advanced persistent threats.</p>
+              </div>
+            </div>
+            <div class="stats">
+              <div><strong>2</strong><span>Certifications</span></div>
+              <div><strong>3</strong><span>SIEM platforms</span></div>
+              <div><strong>3</strong><span>Security projects</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal glass tilt reveal" aria-label="Terminal summary">
+          <div class="term-bar"><i></i><i></i><i></i><span>terminal@jeetu-sec:~</span></div>
+          <div class="term-body" id="terminal">
+            <p><b>➜ ~</b> whoami</p>
+            <p class="out">Jeetu Thomas Vincent</p>
+            <p><b>➜ ~</b> cat skills.txt</p>
+            <p class="out">SIEM, Alert Triage, Log Analysis, Detection Rules, Splunk, Elastic, Wazuh, Python</p>
+            <p><b>➜ ~</b> ./status.sh</p>
+            <p class="out">Completed: Cybersecurity Intern @ F9 INFOTECH (Jul–Sep 2026)</p>
+            <p class="ok">System Secure. No threats detected.<span class="caret"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRACK RECORD -->
+    <section class="section" id="record">
+      <div class="section-head reveal">
+        <p class="eyebrow">Experience // Certifications // Education</p>
+        <h2>TRACK RECORD<span class="accent">.</span></h2>
+      </div>
+
+      <ol class="rows">
+        <li class="row glass reveal">
+          <span class="row-num">01</span>
+          <div class="row-main">
+            <h3>Cybersecurity Intern</h3>
+            <p>F9 Infotech · Kochi, Kerala — monitored security events and analyzed logs to triage alerts and investigate potential threats; supported risk assessments, threat assessments and disaster recovery planning under senior engineers.</p>
+          </div>
+          <span class="row-meta">Jul 2026 – Sep 2026</span>
+        </li>
+        <li class="row glass reveal">
+          <span class="row-num">02</span>
+          <div class="row-main">
+            <h3>CompTIA Security+</h3>
+            <p>SY0-701 certification</p>
+          </div>
+          <span class="row-meta">Certified</span>
+        </li>
+        <li class="row glass reveal">
+          <span class="row-num">03</span>
+          <div class="row-main">
+            <h3>Offenso Certified Security Analyst</h3>
+            <p>OCSA certification</p>
+          </div>
+          <span class="row-meta">Certified</span>
+        </li>
+        <li class="row glass reveal">
+          <span class="row-num">04</span>
+          <div class="row-main">
+            <h3>B.Tech, Electronics &amp; Computer Engineering</h3>
+            <p>APJ Abdul Kalam Technological University</p>
+          </div>
+          <span class="row-meta">2021 – 2025</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ARSENAL -->
+    <section class="section" id="arsenal">
+      <div class="section-head reveal">
+        <p class="eyebrow">Technical Stack</p>
+        <h2>MY ARSENAL<span class="accent">.</span></h2>
+      </div>
+
+      <div class="tools reveal">
+        <div class="tool glass tilt"><b>Sp</b><span>Splunk</span></div>
+        <div class="tool glass tilt"><b>Wz</b><span>Wazuh</span></div>
+        <div class="tool glass tilt"><b>Ek</b><span>Elastic / ELK</span></div>
+        <div class="tool glass tilt"><b>Sy</b><span>Sysmon</span></div>
+        <div class="tool glass tilt"><b>Tn</b><span>Tines</span></div>
+        <div class="tool glass tilt"><b>Bs</b><span>Burp Suite</span></div>
+        <div class="tool glass tilt"><b>Kl</b><span>Kali Linux</span></div>
+        <div class="tool glass tilt"><b>Py</b><span>Python</span></div>
+      </div>
+
+      <div class="skill-groups">
+        <div class="skill-group glass reveal">
+          <h3>SIEM &amp; Log Management</h3>
+          <p class="tags"><span>Log Ingestion</span><span>Detection Rules</span><span>Dashboards</span><span>False Positive Tuning</span><span>Elasticsearch</span><span>Logstash</span><span>Kibana</span></p>
+        </div>
+        <div class="skill-group glass reveal">
+          <h3>SOC Operations</h3>
+          <p class="tags"><span>Alert Triage</span><span>Incident Investigation &amp; Escalation</span><span>Log Correlation</span><span>Threat Detection</span><span>Phishing Analysis</span><span>Malware Detection Basics</span></p>
+        </div>
+        <div class="skill-group glass reveal">
+          <h3>Endpoint, Network &amp; Automation</h3>
+          <p class="tags"><span>Windows Event Logs</span><span>OPNsense</span><span>Traffic Analysis</span><span>TCP/IP</span><span>OSI</span><span>DNS</span><span>HTTP/HTTPS</span><span>Tines (SOAR)</span><span>Groq</span><span>Claude API</span></p>
+        </div>
+        <div class="skill-group glass reveal">
+          <h3>Tools, Systems &amp; Programming</h3>
+          <p class="tags"><span>Nmap</span><span>Nikto</span><span>Gobuster</span><span>Linux</span><span>Windows</span><span>System Hardening</span><span>C</span><span>Java</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="contact-wrap">
+        <div class="reveal">
+          <p class="eyebrow">Get in touch</p>
+          <h2>CONTACT<span class="accent">.</span></h2>
+          <span class="rule"></span>
+          <div class="contact-links">
+            <a class="contact-link glass" href="mailto:g2thomas72@gmail.com"><small>Email</small>g2thomas72@gmail.com</a>
+            <a class="contact-link glass" href="https://github.com/Jeetu77" target="_blank" rel="noopener"><small>GitHub</small>github.com/Jeetu77</a>
+            <a class="contact-link glass" href="https://www.linkedin.com/in/jeetu-thomas-007012280/" target="_blank" rel="noopener"><small>LinkedIn</small>Jeetu Thomas</a>
+            <a class="contact-link glass" href="Jeetu_Thomas_Vincent_Resume.pdf" download><small>Résumé</small>Download PDF</a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-red reveal" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hp"><label>Leave this empty <input name="bot-field"></label></p>
+          <div class="field-row">
+            <label>Your name
+              <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>Your email
+              <input type="email" name="email" placeholder="your.email@example.com" required>
+            </label>
+          </div>
+          <label>Message
+            <textarea name="message" rows="5" placeholder="Let's secure something together..." required></textarea>
+          </label>
+          <div class="form-foot">
+            <button type="submit" class="btn btn-solid">Send Message</button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jeetu Thomas Vincent</p>
+    <p class="mono">System Secure. No threats detected.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
